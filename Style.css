@@ -1,0 +1,159 @@
+/* ===== RESET ===== */
+*{margin:0;padding:0;box-sizing:border-box}
+
+/* ===== BODY ===== */
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(120deg,#020024,#090979,#00d4ff);
+    color:#ffffff;
+    scroll-behavior:smooth;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid rgba(255,255,255,0.2);
+}
+.navbar-brand,.nav-link{color:#fff!important}
+.nav-link:hover{color:#7df9ff!important}
+
+/* ===== HERO ===== */
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+.hero span{
+    color:#7df9ff;
+    text-shadow:0 0 25px #7df9ff;
+}
+
+/* ===== SECTIONS ===== */
+.section{padding:90px 0}
+.title{text-align:center;font-size:38px;margin-bottom:40px}
+
+/* ===== BOX ===== */
+.box{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(12px);
+    padding:30px;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,0.25);
+    transition:.3s;
+}
+.box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 30px rgba(125,249,255,0.6);
+}
+
+/* ===== BUTTON ===== */
+.btn-warning{
+    background:linear-gradient(45deg,#7df9ff,#00d4ff);
+    border:none;
+    color:#000;
+    padding:12px 34px;
+    border-radius:30px;
+    box-shadow:0 0 25px rgba(0,212,255,0.7);
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:rgba(0,0,0,0.4);
+    padding:15px;
+    text-align:center;
+}
+/* ===== HERO SOCIAL ICONS ===== */
+.hero-social{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.hero-social a{
+    width:42px;
+    height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    color:#fff;
+    font-size:18px;
+    transition:0.3s ease;
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+.hero-social a:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 25px rgba(0,255,180,0.8);
+}
+
+/* Instagram color */
+.hero-social a:hover .fa-instagram{
+    color:#e1306c;
+}
+
+/* LinkedIn color */
+.hero-social a:hover .fa-linkedin{
+    color:#0a66c2;
+}
+
+.hero-social {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.hero-social a img {
+    transition: transform 0.3s ease;
+}
+
+.hero-social a:hover img {
+    transform: scale(1.1);
+}
+
+.hero-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,0.15); /* thoda transparent white */
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.hero-social a i {
+    font-size: 22px;
+    background: linear-gradient(45deg, #00d4ff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.hero-social a:hover i {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 8px #00d4ff);
+}
+/* Portfolio iframe styling */
+#portfolio iframe {
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#portfolio iframe:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.8);
+}
+
